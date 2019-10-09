@@ -1,0 +1,65 @@
+
+.vf-drop-menu{
+    position:relative;
+    z-index:5;
+}
+
+.vf-drop-area {
+    display: none;
+    position:absolute;
+    min-width: 100%!important;
+    top:17px;
+}
+
+.vf-drop-area a {
+    padding-left: 15px;
+    width: 100%;
+    display:block;
+}
+
+.vf-drop-area a:hover { }
+
+.vf-drop-menu:hover .vf-drop-area{
+    display:block
+}
+
+/* Ad adding props */
+
+.vf-ad-control {
+    color:dodgerblue;
+}
+
+.vf-ad-control .vf-drop-area {
+    text-align:left;
+    background: white;
+    border-radius: 8px;
+    border:solid 1px #dfdfdf;
+    box-shadow: 0 0 5px silver;
+}
+
+.vf-ad-control i {
+    padding: 0 5px;
+    margin: 0 5px;
+    border-right:solid 1px #ccc;
+}
+.vf-ad-control .vf-drop-area a {
+    display: block;
+    padding:9px;
+}
+
+.vf-ad-control .vf-drop-area a:hover {
+    border-radius: inherit;
+    text-decoration:none;
+    background:#dfdfdf;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+

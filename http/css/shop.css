@@ -1,0 +1,177 @@
+
+
+/* Shop css */
+
+.product-txt-block .name {
+    color:dodgerblue;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 200;
+}
+
+.shop-price-block span {
+    padding: 7px;
+    background:lightyellow;
+    color: green;
+}
+
+.shop-price-block {
+    text-align: center;
+    font-size: 22px;
+}
+
+.shop-price sub {
+    font-size: 22px;
+    color:#333;
+}
+
+.shop-price {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 200;
+    color: dodgerblue;
+}
+
+.vf-shop-card{
+    transition:.5s;
+    border: solid 1px #dfdfdf;
+    margin:10px 0;
+    text-align: center;
+}
+
+.vf-shop-card {
+    transition:.5s;
+    padding:25px 0;
+    text-align: center;
+}
+
+.vf-shop-card .unit {
+    padding: 2px 5px;
+    margin:5px;
+    background:lightyellow;
+    font-size:0.9em;
+    color:#555;
+}
+.vf-shop-card .price sup {
+    font-size: 0.6em;
+    color:green;
+}
+
+.vf-shop-card .price sub {
+    font-size: 0.6em;
+    color:#777;
+}
+
+.shop-title {
+    padding-top:15px !important;
+    font-size: 17px;
+    color:dodgerblue;
+}
+
+.vf-shop-card .price {
+    text-align: right;
+    font-size: 20px;
+    color: #555;
+}
+
+.vf-shop-card a {
+    text-decoration: none;
+}
+
+.vf-shop-card img {
+    width:100%;
+}
+
+.vf-shop-card h5 {
+    font-size: 1.4em;
+    color:#c44ec4;
+    font-weight:900!important;
+}
+
+/*.vf-shop-card:hover{*/
+    /*transform: scale(1.007);*/
+/*}*/
+
+/* Cart */
+
+.cart-link a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    border-radius:4px;
+    background:yellow;
+    padding:3px 5px;
+}
+
+#cart_count{
+    color:firebrick;
+}
+
+.shop-card-label a{
+    text-decoration: none;
+}
+
+.shop-card-label {
+    top:0;
+    left:20px;
+    padding:0 5px;
+    position:absolute;
+    background:yellow;
+}
+
+.vf-shop-card-footer{
+    margin:0;
+    padding:10px;
+    letter-spacing:0.05em;
+    color:violet;
+}
+
+.cart-table-row{
+    background:#dfdfdf;
+}
+
+.cart-price {
+    border-radius: 3px;
+    background: #dfdfdf;
+    color: firebrick;
+    padding: 4px;
+}
+
+.fake-header{
+    width: 100%;
+    padding:10px;
+    font-size:25px;
+    text-align:center;
+    color:#4ae4bb;
+}
+
+.bold-text{
+    padding:10px;
+    font-size:17px;
+    color:dodgerblue;
+}
+
+.order-status-0 {
+    color:#333;
+    padding:2px 7px;
+    border-radius:3px;
+    background:#ff6666;
+}
+
+.order-status-1 {
+    color:firebrick;
+    padding:2px 7px;
+    border-radius:3px;
+    background:yellow;
+}
+
+.order-status-2 {
+    color:firebrick;
+    padding:2px 7px;
+    border-radius:3px;
+    background:#4ae4bb;
+}
+
+
+
+
