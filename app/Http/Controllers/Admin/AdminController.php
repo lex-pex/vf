@@ -29,6 +29,9 @@ class AdminController extends Controller
         ]);
     }
 
+    /**
+     * Posts managing list
+     */
     public function posts() {
         $blogPosts = BlogPost::getAllPosts();
         $categories = Category::getCategories();
@@ -43,8 +46,9 @@ class AdminController extends Controller
         ]);
     }
 
-    // Users' profiles
-
+    /**
+     * Users' profiles list
+     */
     public function usersAdmin() {
         $users = User::getUsersAdmin();
         $categories = Category::getCategories();
@@ -59,8 +63,9 @@ class AdminController extends Controller
         ]);
     }
 
-    /* Visits Calendar */
-
+    /**
+     * Spread the Daily Visits table into the array of Months
+     */
     public function getCalendar() {
         $calendar = array();
         $dailyVisits = DailyVisit::all()->sortBy('date');
@@ -74,6 +79,9 @@ class AdminController extends Controller
         return $calendar;
     }
 
+    /**
+     * Divide the Months Array into the Weeks Array
+     */
     private function getWeeksMap() {
         $cal = $this->getCalendar();
         $weeks = [];
@@ -96,8 +104,9 @@ class AdminController extends Controller
         return $weeks;
     }
 
-    /* Pages Headers */
-
+    /**
+     * Pages Headers 
+     */
     private function getPanelHeaders(){
         return [
             'pageTitle' => 'Admin DashBoard | VF',
