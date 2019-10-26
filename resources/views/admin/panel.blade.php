@@ -30,7 +30,7 @@
                 <hr/>
                 <p><a href="/admin/rubrics">Рубрики</a></p>
                 <hr/>
-                <p><a href="/admin/ads">Объявления</a></p>
+                <p><a href="/admin/ads">Правая Колонка</a></p>
                 <hr/>
                 <p><a href="/admin/users">Пользователи</a></p>
                 <hr/>
