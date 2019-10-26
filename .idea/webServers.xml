@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9ccc103d-8c44-4769-a4a8-f5039246e374" name="VF" url="http://ftp.vegansfreedo-com.1gb.ua">
+        <fileTransfer host="ftp.vegansfreedo-com.1gb.ua" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="888313ab-4c35-4c13-86d3-ebbb3fb7c012" name="VF_ftp" url="http://ftp.vegansfreedo-com.1gb.ua">
+        <fileTransfer host="ftp.vegansfreedo-com.1gb.ua" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
