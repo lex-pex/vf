@@ -34,7 +34,7 @@ class Cart {
         session()->put('products', $products);
         return self::countItems();
     }
-    
+
     public static function countItems() {
         if (session()->exists('products')) {
             $count = 0;
@@ -73,19 +73,20 @@ class Cart {
         return Order::all()->count();
     }
 
+    // Get new created orders
     public static function newOrders() {
         return Order::all()->where('status', 0)->count();
     }
 
-//    public static function getTotalPrice($products) {
-//        $prodsInCart = self::getProducts();
-//        $total = 0;
-//        if ($prodsInCart) {
-//            foreach ($products as $prod) {
-//                $total += $prod['price'] * $prodsInCart[$prod['id']];
-//            }
-//        }
-//        return $total;
-//    }
-
+    /*
+    public static function getTotalPrice($products) {
+        $prodsInCart = self::getProducts();
+        $total = 0;
+        if ($prodsInCart) {
+            foreach ($products as $prod) {
+                $total += $prod['price'] * $prodsInCart[$prod['id']];
+            }
+        }
+        return $total;
+    } */
 }

@@ -11,7 +11,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 bg-light">
+                <hr/>
                 <p style="font-size: 17px; color:royalblue">Всего просмотров &nbsp; | <b style="color:tomato"> &nbsp; {{ $totalVisits }} </b>
                     <br/><small>от 24.07.18 / 00:50</small>
                 </p>
@@ -20,7 +21,7 @@
         </div>
         <div class="row">
             <div class="col-6 p-2">
-                <p><a href="/admin/messages">Сообщения</a>: ({{ $totalMessages }})
+                <p><a href="/admin/messages">Сообщения</a>: ( {{ $totalMessages }} )
                     {!! $newMessages ?  '<span class="cyphers-alert">('.$newMessages.')</span>' : ''!!}</p>
                 <hr/>
                 <p><a href="/admin/posts">Публикации</a></p>
@@ -29,20 +30,21 @@
                 <hr/>
                 <p><a href="/admin/rubrics">Рубрики</a></p>
                 <hr/>
+                <p><a href="/admin/ads">Объявления</a></p>
+                <hr/>
                 <p><a href="/admin/users">Пользователи</a></p>
                 <hr/>
-                <p><a class="cyphers" href="/admin/ads">Объявления</a></p>
-                <hr/>
             </div>
-            <div class="col-6 p-2">
-                <p><a href="{{ route('orders') }}">Заказы</a>: ({{ Cart::totalOrders() }})
-                    <span class="cyphers-alert">({{ Cart::newOrders() }})</span></p>
+            <div class="col-6 p-2 bg-light">
+                <h5>Магазин:</h5>
                 <hr/>
-                <p><a class="cyphers" href="/admin/shop">Товары</a></p>
+                <p><a href="{{ route('orders') }}">Заказы</a>:
+                    <?php $newOrders = Cart::newOrders(); ?>
+                    <span class="{{ $newOrders ? 'cyphers-alert' : '' }}">( {{ $newOrders }} )</span></p>
                 <hr/>
-                <p><a class="cyphers" href="/admin/shop/categories">Категории</a></p>
+                <p><a href="/admin/shop">Товары</a></p>
                 <hr/>
-                <p><a class="cyphers" href="/admin/shop/orders">Заказы</a></p>
+                <p><a href="/admin/shop/categories">Категории</a></p>
                 <hr/>
             </div>
         </div>
