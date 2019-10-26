@@ -7,6 +7,7 @@
 /storage/*.key
 /vendor
 .env
+.env.host
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
