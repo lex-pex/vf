@@ -105,7 +105,7 @@ class AdminController extends Controller
     }
 
     /**
-     * Pages Headers 
+     * Pages Headers
      */
     private function getPanelHeaders(){
         return [

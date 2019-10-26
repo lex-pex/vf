@@ -10,7 +10,7 @@
             Напишите нам пару строк и мы Вам ответим</p>
         @if($errors->any())
             <div class="col-md-12">
-                <div class="form-sent-info">
+                <div class="form-error-message">
                     Поля заполнены не верно!
                 </div>
             </div>
@@ -23,6 +23,16 @@
             </div>
         @endif
         <form method="post" action="{{ route('feedback') }}">
+            <div class="from-group">
+                <label for="text">Текст Вашего сообщения:</label>
+                <textarea id="text" name="text" class="red-placeholder form-control{{ $errors->has('text') ? ' vf-form-error' : '' }}" rows="5" placeholder=" Напишите нам пару строк"
+                          style="resize:none;margin-bottom: 10px">{{ old('text') }}</textarea>
+                @if ($errors->has('text'))
+                    <span class="help-block" style="color:tomato">
+                        <strong>{{ $errors->first('text') }}</strong>
+                    </span>
+                @endif
+            </div>
             <div class="from-group">
                 <label for="name">Ваше Имя:</label>
                 <input id="name" type="text" name="name" class="red-placeholder form-control{{ $errors->has('name') ? ' vf-form-error' : '' }}" placeholder=" Ваше имя"
@@ -43,20 +53,21 @@
                     </span>
                 @endif
             </div>
-            <div class="from-group">
-                <label for="text">Текст Вашего сообщения:</label>
-                <textarea id="text" name="text" class="red-placeholder form-control{{ $errors->has('text') ? ' vf-form-error' : '' }}" rows="5" placeholder=" Напишите нам пару строк"
-                          style="resize:none;margin-bottom: 10px">{{ old('text') }}</textarea>
-                @if ($errors->has('text'))
-                    <span class="help-block" style="color:tomato">
-                        <strong>{{ $errors->first('text') }}</strong>
+            <div class="form-group row">
+                <label for="name" class="col-sm-4 col-form-label text-md-right">Введите сумму:</label>
+                <div class="col-sm-5" style="max-width:35%">
+                    <input id="name" type="text" class="form-control{{ $errors->has('captcha') ? ' is-invalid' : '' }}" name="captcha" placeholder="3 + 2 = ..." required>
+                    @if ($errors->has('captcha'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('captcha') }}</strong>
                     </span>
-                @endif
+                    @endif
+                </div>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-outline-success"><i class="fa fa-check"></i> Отправить</button>
+                </div>
             </div>
             {{ csrf_field() }}
-            <div class="text-right">
-                <button type="submit" class="btn btn-outline-success"><i class="fa fa-check"></i> Отправить</button>
-            </div>
         </form>
     </div>
 </div>

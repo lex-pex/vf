@@ -249,9 +249,17 @@ h1, h2, h3, h4, h5, h6 {
     background: #ccffee;
 }
 
-.form-sent-info{
+.form-error-message {
     text-align:center;
     background:hotpink;
+    color:white;
+    border-radius: 25px 25px 25px 0;
+    padding:17px; margin-bottom: 20px
+}
+
+.form-sent-info {
+    text-align:center;
+    background:#4ae4bb;
     color: white;
     border-radius: 25px 25px 25px 0;
     padding:17px; margin-bottom: 20px

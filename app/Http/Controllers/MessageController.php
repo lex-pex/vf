@@ -26,6 +26,7 @@ class MessageController extends Controller
 
     public function feedback(Request $request) {
         $this->validate($request, [
+            'captcha' => 'required|in:5',
             'name' => 'required|min:2|max:100',
             'email' => 'email',
             'text' => 'required|min:3|max:510',
