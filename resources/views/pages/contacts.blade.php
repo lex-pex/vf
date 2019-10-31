@@ -54,9 +54,9 @@
                 @endif
             </div>
             <div class="form-group row">
-                <label for="name" class="col-sm-4 col-form-label text-md-right">Введите сумму:</label>
+                <label for="captcha" class="col-sm-4 col-form-label text-md-right">Введите сумму:</label>
                 <div class="col-sm-5" style="max-width:35%">
-                    <input id="name" type="text" class="form-control{{ $errors->has('captcha') ? ' is-invalid' : '' }}" name="captcha" placeholder="3 + 2 = ..." required>
+                    <input id="captcha" type="text" class="form-control{{ $errors->has('captcha') ? ' is-invalid' : '' }}" name="captcha" placeholder="3 + 2 = ..." required>
                     @if ($errors->has('captcha'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('captcha') }}</strong>
