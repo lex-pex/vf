@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f3f07f5-d7ce-4574-b084-7e7b71c9d608" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/contacts.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/contacts.blade.php" />
-    </list>
+    <list default="true" id="5f3f07f5-d7ce-4574-b084-7e7b71c9d608" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +50,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
               <caret line="57" column="60" lean-forward="true" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
-              <folding />
+              <folding>
+                <element signature="e#3028#3049#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -492,12 +492,12 @@
       <workItem from="1570878909801" duration="607000" />
       <workItem from="1571497210681" duration="1458000" />
       <workItem from="1572084278276" duration="4183000" />
-      <workItem from="1572518575583" duration="1323000" />
+      <workItem from="1572518575583" duration="1900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="619091000" />
+    <option name="totallyTimeSpent" value="619668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -836,7 +836,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="57" column="60" lean-forward="true" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
-          <folding />
+          <folding>
+            <element signature="e#3028#3049#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
