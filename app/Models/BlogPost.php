@@ -12,6 +12,75 @@ class BlogPost extends Model
 
     private static $_IMG_STORAGE = '/public/up/img/posts/';
 
+//    public function getTextAttribute($text) {
+//        $message = '';
+//        $trimOl = $this->trimOlContent($text, $message);
+//        $trimUl = $this->trimUlContent($trimOl, $message);
+//        $trimPrepaid = $this->trimPrepaidContent($trimUl, $message);
+//        return $trimPrepaid;
+//        return $text;
+//    }
+
+    // ______________________ TRIMMING ______________________
+
+    private function trimOlContent($text, $message) {
+        $resultOl = '';
+        $chunkOl = explode('<ol>', $text);
+        if(count($chunkOl) > 1) {
+            $resultOl .= $chunkOl[0];
+            for ($i = 1; $i < count($chunkOl); $i++) {
+                $slice = explode('</ol>', $chunkOl[$i]);
+                $resultOl .= $message;
+                $resultOl .= isset($slice[1]) ? $slice[1] : '';
+            }
+        } else {
+            $resultOl = $text;
+        }
+        return $resultOl;
+    }
+
+    private function trimUlContent($text, $message) {
+        $resultUl = '';
+        $chunkUl = explode('<ul>', $text);
+        if(count($chunkUl) > 1) {
+            $resultUl .= $chunkUl[0];
+            for ($i = 1; $i < count($chunkUl); $i++) {
+                $slice = explode('</ul>', $chunkUl[$i]);
+                $resultUl .= $message;
+                $resultUl .= isset($slice[1]) ? $slice[1] : '';
+            }
+        } else {
+            $resultUl = $text;
+        }
+        return $resultUl;
+    }
+
+
+    private function trimPrepaidContent($text, $message) {
+
+        $resultPrepaid = '';
+
+        $chunkPrepaid = explode('<prepaid-content>', $text);
+
+        if(count($chunkPrepaid) > 1) {
+
+            $resultPrepaid .= $chunkPrepaid[0];
+
+            for ($i = 1; $i < count($chunkPrepaid); $i++) {
+                $slice = explode('</prepaid-content>', $chunkPrepaid[$i]);
+                $resultPrepaid .= $message;
+                $resultPrepaid .= isset($slice[1]) ? $slice[1] : '';
+            }
+        } else {
+            $resultPrepaid = $text;
+        }
+
+        return $resultPrepaid;
+    }
+
+    // ______________________ TRIMMING ______________________
+
+
     public static function getPost($id){
         return BlogPost::all()->where('id', $id)->first();
     }
@@ -26,6 +95,21 @@ class BlogPost extends Model
             return $posts = BlogPost::all()->where('user_id', $user_id)->sortByDesc('id');
         }
         return null;
+    }
+
+    // Get post link
+    public static function getPostsLink($post_id) {
+        $blogPost = BlogPost::find($post_id);
+        $link = new \stdClass();
+        if($blogPost) {
+            $cat = Category::getAliasById($blogPost->category_id);
+            $link->title = $title = $blogPost->title;
+            $link->link = '/' . $cat . '/' . $blogPost->alias;
+        } else {
+            $link->title = '';
+            $link->link = '';
+        }
+        return $link;
     }
 
     public static function postStore(Request $request){

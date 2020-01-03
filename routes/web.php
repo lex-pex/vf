@@ -83,6 +83,7 @@ Route::group(['prefix' => 'shop', 'middleware' => ['counter', 'web']], function 
 });
 
 Route::group(['prefix' => '/', 'middleware' => ['counter', 'web']], function () {
+    Route::get('subscription', 'MainController@subscription')->name('subscription');
     Route::get('about', 'MainController@about')->name('about');
     Route::get('contacts', 'MessageController@contacts')->name('contacts');
     // Board

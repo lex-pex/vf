@@ -8,7 +8,7 @@ use App\Models\Feedback;
 class MessageController extends Controller
 {
 
-    public function contacts(){
+    public function contacts() {
         return view('pages.contacts', [
             'headers' => $this->getContactHeaders(),
             'currentCategory' => 0,

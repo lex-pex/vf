@@ -6,7 +6,6 @@ use App\Assist\Pager;
 
 class MainController extends Controller
 {
-
     public function page0(){
         return redirect('/');
     }
@@ -24,6 +23,13 @@ class MainController extends Controller
         ]);
     }
 
+    public function subscription() {
+        return view('pages.subscription', [
+            'headers' => $this->getSubscriptionHeaders(),
+            'currentCategory' => 0,
+        ]);
+    }
+
     public function about() {
         return view('pages.about', [
             'headers' => $this->getAboutHeaders(),
@@ -37,6 +43,17 @@ class MainController extends Controller
             'url' => asset(''),
             'title' => 'Веганский сайт, Веган сообщество',
             'description' => "Сайт об этичности, питании и здоровье. Для веганов и вегетарианцев. Веган рецепты и лайфаки. Статьи о полезном питании и здоровом образе жизни.",
+            'image' => asset('img/vegans.jpg')
+        ];
+    }
+
+    private function getSubscriptionHeaders()
+    {
+        return [
+            'pageTitle' => 'Оформление подписки на Vegans Freedom',
+            'url' => asset('/subscription'),
+            'title' => 'Оформление подписки на Vegans Freedom',
+            'description' => 'Проект Vegans Freedom это познавательный проект о правильном питании и переходе на этичный и здоровый образ жизни. Информация собираемая и распространяемая проектом важна и полезна для всех без исключения, но главным образом для тех кто имеет сострадание и кому не безразлична судьба животных',
             'image' => asset('img/vegans.jpg')
         ];
     }

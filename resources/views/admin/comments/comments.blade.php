@@ -13,9 +13,14 @@
             </div>
             <div style="padding: 0 10px">
             @foreach($comments as $comment)
+            <hr/>
             <div id="{{ $comment->id }}_display">
                 <div class="panel panel-default">
                     <div style="color:gray;margin:5px;">
+                        @php $link = BlogPost::getPostsLink($comment->post_id) @endphp
+                        <div class="text-right p-0 m-0">
+                            <small><a target="_blank" href="{{ $link->link }}">{{ $link->title }}</a></small>
+                        </div>
                         <i><a><strong>{{ $comment->author }} : </strong></a>
                             <span id="{{ $comment->id }}_txt">{{ $comment->text }}</span></i>
                     </div>
