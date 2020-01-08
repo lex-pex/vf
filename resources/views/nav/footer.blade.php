@@ -15,8 +15,13 @@
         </div>
         <div class="vf-bottom">
             Vegans Freedom © 2018-2019
-            <p>Created by <img src="/img/details/ls.png" style="width: 15px"> Lexis-Studio <i class="fa fa-diamond"></i> com<br/>
-            <small>создано студией лексис-студио ком</small></p>
+            <a href="https://lexis-studio.inf.ua" target="_blank" style="color:white;text-decoration: none">
+                <p>Created by <img src="/img/details/ls.png" style="width: 15px">
+                    Lexis-Studio <i class="fa fa-diamond"></i> inf.ua
+                    <br/>
+                <small>создано студией лексис-студио ком</small>
+                </p>
+            </a>
         </div>
     </div>
 </footer>

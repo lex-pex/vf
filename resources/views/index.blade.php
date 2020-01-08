@@ -19,7 +19,7 @@
     <title>{{ $headers['pageTitle'] }}</title>
     <link rel="icon" href="/favicon.png">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/vf.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/vfv.css') }}" rel="stylesheet" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151418896-1"></script>
