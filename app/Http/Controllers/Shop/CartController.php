@@ -5,11 +5,48 @@ namespace App\Http\Controllers\Shop;
 use App\Assist\Shop\Cart;
 use App\Http\Controllers\Controller;
 use App\Models\Shop\Order;
+use App\Models\Visit;
 use Illuminate\Http\Request;
 use App\Models\Shop\Product;
 
 class CartController extends Controller
 {
+    /**
+     * iHerb counter
+     */
+    public function ihCount($number) {
+        $urn = 'iHerb_' . $number;
+        if($visit = Visit::where('page', $urn)->first()) {
+            $visit->increment('amount');
+        } else {
+            $visit = new Visit();
+            $visit->page = $urn;
+            $visit->user = 0;
+            $visit->amount = 1;
+            $visit->save();
+        }
+        return $visit->amount;
+    }
+
+    /**
+     * iHerb counter reset
+     */
+    public function ihCountReset($number) {
+
+        $urn = 'iHerb_' . $number;
+
+        if($visit = Visit::where('page', $urn)->first()) {
+            $visit->amount = 0;
+        } else {
+            $visit = new Visit();
+            $visit->page = $urn;
+            $visit->user = 0;
+            $visit->amount = 0;
+        }
+        $visit->save();
+        return 'Reset: ' . $number;
+    }
+
     public function add($id) {
         return Cart::addProduct($id);
     }

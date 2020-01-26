@@ -101,3 +101,25 @@ function amount(id){
     });
 }
 
+/* iHerb counter */
+
+function ihCount(number) {
+    var token = $('meta[name="csrf-token"]').attr('content');
+    $.post(
+        '/shop/cart/ihcount/' + number,
+        {_token : token, number: number},
+        function (data) {
+            $('#iherb_counter_' + number).html(data);
+        });
+}
+
+function ihCountReset(number) {
+    var token = $('meta[name="csrf-token"]').attr('content');
+    $.post(
+        '/shop/cart/ihcountreset/' + number,
+        {_token : token, number: number},
+        function (data) {
+            $('#iherb_counter_' + number).html(0);
+        });
+}
+

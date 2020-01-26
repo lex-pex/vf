@@ -1,7 +1,7 @@
 @extends('index')
 @section('content')
     @include('cont.poster')
-    @include('cont.webmaster')
+    @include('cont.iherb')
     @include('cont.text')
     @include('cont.share')
     @include('cont.comment')

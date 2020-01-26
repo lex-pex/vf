@@ -19,7 +19,7 @@
     <title>{{ $headers['pageTitle'] }}</title>
     <link rel="icon" href="/favicon.png">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/vf.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/vfv.css') }}" rel="stylesheet" />
 </head>
 <body>
 @include('nav.menu')

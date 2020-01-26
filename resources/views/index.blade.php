@@ -50,7 +50,7 @@
 </main>
 @include('nav.footer')
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/vf.js') }}"></script>
+<script src="{{ asset('js/vf.js?v=3') }}"></script>
 <script src="{{ asset('js/sl.js') }}"></script>
 </body>
 </html>
