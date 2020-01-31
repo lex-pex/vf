@@ -13,7 +13,7 @@
         <div class="row">
             <a href="/shop" class="col-12 category-link {{ $currentCategory == 0 ? 'shop-selected' : '' }}">
                 <p>МАГАЗИН</p>
-                <span>Главная страница магазина</span>
+                <span>Главная страница</span>
             </a>
             @foreach(ShopCategory::getCategories() as $category)
                 <a href="/shop/{{$category->alias}}"  class="col-12 category-link {{ $category->id == $currentCategory ? 'shop-selected' : '' }}">

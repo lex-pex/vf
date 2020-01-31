@@ -3,10 +3,11 @@
 /* Shop css */
 
 .product-txt-block .name {
-    color:dodgerblue;
+    color:white;
+    text-shadow: 1px 1px 2px black;
     text-align: center;
     font-size: 33px;
-    font-weight: 200;
+    font-weight: bold;
 }
 
 .shop-price-block span {
@@ -29,10 +30,12 @@
     text-align: center;
     font-size: 55px;
     font-weight: 200;
-    color: dodgerblue;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 .vf-shop-card {
+    background: white;
     transition:.5s;
     border: solid 1px #dfdfdf;
     border-radius: 10px;
@@ -143,18 +146,20 @@
     padding: 4px;
 }
 
-.fake-header{
+.fake-header {
     width: 100%;
     padding:10px;
     font-size:25px;
     text-align:center;
-    color:#4ae4bb;
+    color:white;
+    text-shadow: 1px 1px 1px black;
 }
 
 .bold-text{
     padding:10px;
     font-size:17px;
-    color:dodgerblue;
+    color:white;
+    text-shadow: 1px 1px 1px black;
 }
 
 .order-status-0 {
@@ -165,27 +170,25 @@
 }
 
 .order-status-1 {
-    color:firebrick;
+    color:black;
     padding:2px 7px;
     border-radius:3px;
     background:yellow;
 }
 
 .order-status-2 {
-    color:firebrick;
+    color:black;
     padding:2px 7px;
     border-radius:3px;
     background:#4ae4bb;
 }
 
-
-
-
 /* - - - - - - - - - - - - Side Bar - - - - - - - - - - */
-
 
 .shop-selected {
     background:black !important;
+    border-left: solid 15px orange !important;
+    border-bottom: solid 1px orange !important;
     color:#ddd;
 }
 
@@ -237,9 +240,45 @@ a.category-link {
 }
 
 
+/* - - - - - - - - - - - - - - - - - - - - */
+
+.shop-body a {
+    color:black;
+}
+
+.shop-body {
+    border-top: solid 1px gray;
+    color: black;
+    background-image: linear-gradient(#aaa, #fff);
+}
+
+.message-to-cart {
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
 
 
+.add-to-cart-picture {
+    z-index:99;
+    color: #ddd;
+    font-weight: bold;
+    font-size: 35px;
+    padding:20px 10px;
+    position:fixed;
+    top:calc(50% - 150px);
+    left:calc(50% - 150px);
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 15px 15px 25px gray;
+    background: black;
+}
 
+.shop-calculator a {
+    color: black;
+}
 
 
 

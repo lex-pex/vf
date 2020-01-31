@@ -64,8 +64,7 @@ class Pager
         $limit = self::$limit;
         $products =
             Product::where('status', 1)->where('name', 'like', '%' . $query . '%')
-                ->orWhere('description', 'like', '%' . $query . '%')
-                ->orderByDesc('id');
+                ->orWhere('description', 'like', '%' . $query . '%');
         $total = $products->count();
         $amountPages = self::actualPages($limit, $total);
         if($num > $amountPages || $num < 1) return null;

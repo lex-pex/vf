@@ -73,6 +73,10 @@ $(document).ready(function () {
         $.post('/shop/cart/add/' + id, par, function (data) {
             $("#cart_count").html(data);
         });
+        $('.add-to-cart-picture').fadeIn(1000);
+        setTimeout(function () {
+            $('.add-to-cart-picture').fadeOut(1000);
+        }, 1200);
         return false;
     });
 

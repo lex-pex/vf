@@ -24,7 +24,7 @@
                 <div class="from-group pad-25">
                     <label for="query">Введите слово, или фразу:</label>
                     <input id="query" type="text" name="query" class="red-placeholder form-control{{ $errors->has('query') ? ' vf-form-error' : '' }}"
-                           placeholder=" слово / фраза / название " value="{{ old('name') }}" required/>
+                           placeholder=" слово , фраза , название " value="{{ old('name') }}" required/>
                     @if ($errors->has('query'))
                         <span class="help-block" style="color:tomato">
                     <strong>{{ $errors->first('query') }}</strong>
@@ -32,7 +32,7 @@
                     @endif
                 </div>
                 <div class="form-group pad-bot-25">
-                    <button type="submit" class="btn btn-block btn-outline-success"><i class="fa fa-search"></i> Искать</button>
+                    <button type="submit" class="btn btn-block btn-outline-dark"><i class="fa fa-search"></i> Искать</button>
                 </div>
             </form>
         </div>

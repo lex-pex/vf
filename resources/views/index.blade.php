@@ -19,7 +19,7 @@
     <title>{{ $headers['pageTitle'] }}</title>
     <link rel="icon" href="/favicon.png">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/vfv.css?v=1') }}" rel="stylesheet" />
+    <link href="{{ asset('css/vf.css?v=3') }}" rel="stylesheet" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151418896-1"></script>
@@ -50,7 +50,7 @@
 </main>
 @include('nav.footer')
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/vf.js?v=3') }}"></script>
+<script src="{{ asset('js/vf.js?v=5') }}"></script>
 <script src="{{ asset('js/sl.js') }}"></script>
 </body>
 </html>

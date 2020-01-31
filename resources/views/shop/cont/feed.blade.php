@@ -1,7 +1,9 @@
 <div class="row pad-25"><!-- Feed Row Starts -->
-    <div class="col-md-6 col-sm-12">{{--<div class="col-6 vf-pop-rubric pad-25"><span>ТОВАРЫ</span></div>--}}</div>
     <div class="col-md-6 col-sm-12 text-center">
-        <a class="btn btn-outline-dark" href="/shop/cart/">
+        <span class="message-to-cart">КАК ЗАКАЗАТЬ? СМОТРИТЕ В КОРЗИНЕ</span>
+    </div>
+    <div class="col-md-6 col-sm-12 text-center">
+        <a class="btn btn-block btn-outline-dark" href="/shop/cart/">
             <span style="padding:20px 25px;font-size:17px">
             <i class="fa fa-shopping-cart" style="font-size:20px; padding-right: 7px"></i> Корзина
                 ( <span id="cart_count">{{ Cart::countItems() }}</span> )

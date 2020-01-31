@@ -4,7 +4,7 @@
     <div class="col-lg-8 col-md-10 col-sm-12">
         <div class="row">
             <div class="col-md-6 col-sm-12 p-3">
-                <a href="{{ route('admin') }}"><i class="fa fa-backward"></i> Назад в ПАНЕЛЬ</a>
+                <a class="btn btn-outline-dark" href="{{ route('admin') }}"><i class="fa fa-backward"></i> Назад в ПАНЕЛЬ</a>
             </div>
             <div class="col-md-6 col-sm-12 text-right p-3">
                 Статусы:
@@ -31,7 +31,7 @@
                 </table>
             </div>
             <div class="col-12 p-3">
-                <a href="/admin"> <i class="fa fa-backward"></i> Назад в ПАНЕЛЬ</a>
+                <a class="btn btn-outline-dark" href="/admin"> <i class="fa fa-backward"></i> Назад в ПАНЕЛЬ</a>
             </div>
         </div>
     </div>

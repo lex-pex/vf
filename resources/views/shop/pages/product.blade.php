@@ -2,12 +2,14 @@
 @section('content')
     @include('shop.cont.finder')
     <div class="row pad-25"><!-- Feed Row Starts -->
-        <div class="col-md-6 col-sm-12">{{--<div class="col-6 vf-pop-rubric pad-25"><span>ТОВАР</span></div>--}}</div>
+        <div class="col-md-6 col-sm-12 text-center">
+            <span class="message-to-cart">КАК ЗАКАЗАТЬ? СМОТРИТЕ В КОРЗИНЕ</span>
+        </div>
         <div class="col-md-6 col-sm-12 text-center">
             {{--<a href="/shop/cart/"><i class="fa fa-shopping-cart"></i> Корзина ( <span id="cart_count">{{ Cart::countItems() }}</span> )</a>--}}
-            <a class="btn btn-outline-dark" href="/shop/cart/">
+            <a class="btn btn-block btn-outline-dark" href="/shop/cart/">
                 <span style="padding:20px 25px;font-size:17px">
-                    <i class="fa fa-shopping-cart" style="font-size: 20px; padding-right: 7px"></i> Корзина
+                    <i class="fa fa-shopping-cart" style="font-size:20px; padding-right:15px"></i> Корзина
                         ( <span id="cart_count">{{ Cart::countItems() }}</span> )
                 </span>
             </a>
@@ -24,13 +26,13 @@
             <p class="shop-price">{{ $product->price }},<sup>00</sup><sub>грн</sub></p>
             <div class="text-center">
                 <a href="#" onclick="event.preventDefault();" token="{{ csrf_token() }}" data_id="{{ $product->id }}"
-                   class="btn btn-block btn-outline-dark add-to-cart"><i class="fa fa-shopping-cart" style="font-size: 1.2em"></i> &nbsp; В коризну </a>
+                   class="btn btn-block btn-outline-dark add-to-cart"><i class="fa fa-shopping-cart" style="font-size: 1.5em; padding:15px"></i> &nbsp; В КОРЗИНУ </a>
             </div>
         </div>
     </div>
     <div class="row pad-50">
         <div class="col-12" title="Смотреть рубрику данной статьи">
-            <a href="/{{ $categoryUrn }}"><i class="fa fa-backward"></i> Назад в рубрику "{{ $categoryName }}"</a>
+            <a class="btn btn-outline-dark" href="/{{ $categoryUrn }}"><i class="fa fa-backward p-3"></i> Назад в рубрику "{{ $categoryName }}"</a>
         </div>
         @if($edit)
             <div class="col-12 text-right">

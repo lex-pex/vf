@@ -19,14 +19,15 @@
     <title>{{ $headers['pageTitle'] }}</title>
     <link rel="icon" href="/favicon.png">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/vfv.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/vf.css?v=4') }}" rel="stylesheet" />
+    <link href="{{ asset('css/shop.css?v=4') }}" rel="stylesheet" />
 </head>
 <body>
 @include('nav.menu')
 <main role="main">
 @include('nav.header')
 @include('shop.nav.sidebar')
-    <div class="container-fluid"><!-- Main Grid Area Starts -->
+    <div class="container-fluid shop-body"><!-- Main Grid Area Starts -->
         <div class="row justify-content-center p-0">
             <div class="col-lg-1 sidebar-lg-shop-spacer"></div>
             <div class="offset-lg-1 col-lg-8 col-md-9 col-sm-12"><!-- Central Canvas -->
@@ -39,8 +40,17 @@
     </div><!-- Main Grid Area Ends -->
 </main>
 @include('nav.footer')
+
+
+<div class="add-to-cart-picture" style="display:none">
+    ТОВАР <br/>
+    ДОБАВЛЕН <br/>
+    В КОРЗИНУ <br/>
+    <i class="fa fa-shopping-cart" style="font-size:2em"></i>
+</div>
+
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/vf.js') }}"></script>
+<script src="{{ asset('js/vf.js?v=4') }}"></script>
 </body>
 </html>
 

@@ -4,7 +4,7 @@
     <div class="col-lg-8 col-md-10 col-sm-12">
         <div class="row p-3">
             <div class="col-md-6 col-sm-12">
-                <a href="{{ route('orders') }}"><i class="fa fa-backward"></i> Назад Заказы</a>
+                <a class="btn btn-outline-dark" href="{{ route('orders') }}"><i class="fa fa-backward"></i> Назад в Заказы</a>
             </div>
             <div class="col-md-6 col-sm-12 text-right">
                 Статусы:
@@ -17,7 +17,7 @@
             <div class="col-12">
                 <table class="table table-striped">
                     <tr><td style="width: 30%">Статус</td><td><span class="order-status-{{$order->status}}">{{ $order->getStatus() }}</span></td></tr>
-                    <tr><td>Номер</td><td style="color: dodgerblue">27{{ $order->id }}</td></tr>
+                    <tr><td>Номер</td><td style="color:white;text-shadow:1px 1px 1px black">27{{ $order->id }}</td></tr>
                     <tr><td>Контакт</td><td>{{ $order->name }}</td></tr>
                     <tr><td>Телефон</td><td>{{ $order->phone }}</td></tr>
                     <tr><td>Коментарий</td><td>{{ $order->comment }}</td></tr>
@@ -46,7 +46,7 @@
                     <tr><td colspan="4" class="text-left bold-text">Всего: {{ $total }}</td></tr>
                 </table>
                 <div class="col-12 text-right">
-                    <a class="btn btn-outline-primary" href="{{ route('orderEdit', ['order' => $order]) }}"><i class="fa fa-edit"></i> Редактировать</a>
+                    <a class="btn btn-outline-dark" href="{{ route('orderEdit', ['order' => $order]) }}"><i class="fa fa-edit"></i> Редактировать</a>
                 </div>
 
             </div>

@@ -29,7 +29,7 @@
                         <textarea id="comment" name="comment" class="form-control red-placeholder" style="resize: none" rows="3" placeholder="Кмментарий к заказу (необязательно)">{{ old('comment') }}</textarea>
                     </div>
                     <div class="from-group text-right pad-25">
-                        <button type="submit" class="btn btn-outline-primary"><i class="fa fa-paper-plane"></i> &nbsp; Оформить</button>
+                        <button type="submit" class="btn btn-outline-dark"><i class="fa fa-paper-plane"></i> &nbsp; Оформить</button>
                     </div>
                     {{ csrf_field() }}
                 </form>

@@ -14,7 +14,7 @@
     padding:75px 0;
 }
 .pad-100 {
-    paddiop:100px 0;
+    padding:100px 0;
 }
 .pad-top-25{
     padding-top:25px;
@@ -45,6 +45,10 @@
 }
 
 /* Horizontal */
+
+.pad-h-10{
+    padding:0 15px !important;
+}
 
 .pad-h-15{
     padding:0 15px !important;
