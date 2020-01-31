@@ -12,6 +12,13 @@ use App\Models\Shop\Product;
 class CartController extends Controller
 {
     /**
+     * Marks the message as read in session
+     */
+    public function messageRead() {
+        session()->put('message_read', true);
+    }
+
+    /**
      * iHerb counter
      */
     public function ihCount($number) {

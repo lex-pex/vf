@@ -127,3 +127,13 @@ function ihCountReset(number) {
         });
 }
 
+$(document).ready(function () {
+    $('#modal_launcher').click();
+});
+
+function modalMessageRead() {
+    var token = $('meta[name="csrf-token"]').attr('content');
+    $.post('/shop/cart/message_read', {_token : token });
+}
+
+

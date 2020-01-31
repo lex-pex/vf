@@ -67,6 +67,8 @@ Route::group(['prefix' => 'shop', 'middleware' => ['counter', 'web']], function 
     Route::post('/cart/ihcount/{number}', 'Shop\CartController@ihCount');
     Route::post('/cart/ihcountreset/{number}', 'Shop\CartController@ihCountReset');
 
+    Route::post('/cart/message_read', 'Shop\CartController@messageRead');
+
     Route::get('add', 'Shop\ProductManager@productAdd');
     Route::post('store', 'Shop\ProductManager@productStore')->name('productStore');
     Route::get('preview/{id}', 'Shop\ProductManager@preview')->name('productPreview');

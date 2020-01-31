@@ -16,11 +16,12 @@
     <meta name="twitter:image" content="{{ $headers['image'] }}" />
     <meta name="yandex-verification" content="e31322b7cefd6aa1" />
     <meta name="msvalidate.01" content="2C526067C2E0CAE00D3DEA4A6FAA06F6" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ $headers['pageTitle'] }}</title>
     <link rel="icon" href="/favicon.png">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/vf.css?v=4') }}" rel="stylesheet" />
-    <link href="{{ asset('css/shop.css?v=4') }}" rel="stylesheet" />
+    <link href="{{ asset('css/vf.css?v=5') }}" rel="stylesheet" />
+    <link href="{{ asset('css/shop.css?v=5') }}" rel="stylesheet" />
 </head>
 <body>
 @include('nav.menu')
@@ -40,17 +41,15 @@
     </div><!-- Main Grid Area Ends -->
 </main>
 @include('nav.footer')
-
-
 <div class="add-to-cart-picture" style="display:none">
     ТОВАР <br/>
     ДОБАВЛЕН <br/>
     В КОРЗИНУ <br/>
     <i class="fa fa-shopping-cart" style="font-size:2em"></i>
 </div>
-
+@include('shop.jumbo.modal')
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/vf.js?v=4') }}"></script>
+<script src="{{ asset('js/vf.js?v=5') }}"></script>
 </body>
 </html>
 
