@@ -625,9 +625,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Shop Jumbo */
 
+.vf-shop-jumbo-txt a {
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
 .vf-shop-jumbo-txt {
     background:rgba(0, 0, 0, 0.5);
-    padding:10px 15px 0 15px;
+    padding:5px 15px 5px 15px;
     border-radius:17px;
     color: white;
     line-height: 1.05em;
@@ -639,7 +644,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     right:3%;
     bottom:10px;
-    z-index:1;
+    z-index:9;
 }
 
 /* Central Canvar */

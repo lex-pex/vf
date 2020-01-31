@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f3f07f5-d7ce-4574-b084-7e7b71c9d608" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/shop/jumbo/about.blade.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/http/css/vfv.css" afterPath="$PROJECT_DIR$/http/css/vf.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/http/js/vfj.js" afterPath="$PROJECT_DIR$/http/js/vfj_hidden.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/http/img/shop/details/about/bulb.png" afterPath="$PROJECT_DIR$/http/img/shop/details/about/bulb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/http/img/shop/details/about/question.png" afterPath="$PROJECT_DIR$/http/img/shop/details/about/question.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/cont/jumbo_shop.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Assist/Shop/Pager.php" afterPath="$PROJECT_DIR$/app/Assist/Shop/Pager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Shop/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Shop/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/http/css/shop.css" afterPath="$PROJECT_DIR$/http/css/shop.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/http/css/vfp.css" afterPath="$PROJECT_DIR$/http/css/vfp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/http/js/vf.js" afterPath="$PROJECT_DIR$/http/js/vf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/http/css/vf.css" afterPath="$PROJECT_DIR$/http/css/vf.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/cart/how.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/cart/how.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/cart/order.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/cart/order.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/cart/success.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/cart/success.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/cart/table.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/cart/table.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/cont/feed.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/cont/feed.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/cont/finder.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/cont/finder.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/nav/sidebar.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/nav/sidebar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/order/order.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/order/order.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/order/orders.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/order/orders.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/pages/main.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/pages/main.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/pages/product.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/pages/product.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/pages/search.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/pages/search.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/shop/jumbo/text.blade.php" afterPath="$PROJECT_DIR$/resources/views/shop/jumbo/text.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,18 +31,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="about.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/shop/jumbo/about.blade.php">
+      <file leaf-file-name="jumbo_shop.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/cont/jumbo_shop.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="450">
+              <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/shop/jumbo/text.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vf.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/http/css/vf.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="631" column="1" lean-forward="false" selection-start-line="631" selection-start-column="1" selection-end-line="631" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="53" column="47" lean-forward="false" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,8 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/cont/feed.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/cont/text.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" />
         <option value="$PROJECT_DIR$/app/Assist/Shop/Cart.php" />
         <option value="$PROJECT_DIR$/.env.host" />
@@ -172,19 +174,16 @@
         <option value="$PROJECT_DIR$/resources/views/nav/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/nav/header.blade.php" />
         <option value="$PROJECT_DIR$/http/css/vfv.css" />
-        <option value="$PROJECT_DIR$/http/css/vf.css" />
         <option value="$PROJECT_DIR$/resources/views/shop/nav/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/http/js/vfj.js" />
         <option value="$PROJECT_DIR$/resources/views/shop/cont/feed.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/shop/pages/product.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/shop/cart/order.blade.php" />
         <option value="$PROJECT_DIR$/http/js/vf.js" />
-        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/shop/cart/success.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/shop/order/order.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/shop/order/orders.blade.php" />
         <option value="$PROJECT_DIR$/http/css/shop.css" />
-        <option value="$PROJECT_DIR$/resources/views/shop/pages/main.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Shop/HomeController.php" />
         <option value="$PROJECT_DIR$/http/css/vfp.css" />
         <option value="$PROJECT_DIR$/resources/views/shop/cart/table.blade.php" />
@@ -194,6 +193,11 @@
         <option value="$PROJECT_DIR$/resources/views/shop/pages/search.blade.php" />
         <option value="$PROJECT_DIR$/app/Assist/Shop/Pager.php" />
         <option value="$PROJECT_DIR$/resources/views/shop/jumbo/about.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/shop/pages/main.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/shop/jumbo/text.blade.php" />
+        <option value="$PROJECT_DIR$/http/css/vf.css" />
+        <option value="$PROJECT_DIR$/resources/views/cont/jumbo_shop.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
       </list>
     </option>
   </component>
@@ -328,45 +332,6 @@
             <path>
               <item name="vf" type="b2602c69:ProjectViewProjectNode" />
               <item name="vf" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="vf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vf" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Assist" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="vf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vf" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Assist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Shop" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="vf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vf" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="vf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vf" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="vf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vf" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Shop" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="vf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vf" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="http" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -385,6 +350,13 @@
               <item name="vf" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="vf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vf" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cont" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="vf" type="b2602c69:ProjectViewProjectNode" />
@@ -432,10 +404,10 @@
       <recent name="$PROJECT_DIR$/resources/views/shop/manage" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/cont" />
       <recent name="$PROJECT_DIR$/http/img/shop/details/about" />
       <recent name="$PROJECT_DIR$/resources/views/shop/jumbo" />
       <recent name="$PROJECT_DIR$/http/img/iherb" />
-      <recent name="$PROJECT_DIR$/resources/views/cont" />
       <recent name="$PROJECT_DIR$/http/css" />
     </key>
   </component>
@@ -496,12 +468,12 @@
       <workItem from="1578860317712" duration="626000" />
       <workItem from="1579874382059" duration="6525000" />
       <workItem from="1580048097980" duration="323000" />
-      <workItem from="1580460525798" duration="24667000" />
+      <workItem from="1580460525798" duration="25853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="678598000" />
+    <option name="totallyTimeSpent" value="679784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -513,7 +485,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2744861" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28778717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2732475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21530758" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -540,27 +512,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/posts.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Visit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Counter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/panel.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -748,14 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -849,14 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/http/css/vf.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="734" column="1" lean-forward="false" selection-start-line="734" selection-start-column="1" selection-end-line="734" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/http/img/shop/details/about/question.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -925,10 +860,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/shop/jumbo/jumbo.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/shop/pages/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="30">
+          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -944,6 +887,38 @@
             <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/cont/jumbo_shop.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/shop/jumbo/text.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http/css/vf.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="631" column="1" lean-forward="false" selection-start-line="631" selection-start-column="1" selection-end-line="631" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="53" column="47" lean-forward="false" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>

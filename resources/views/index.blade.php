@@ -19,7 +19,7 @@
     <title>{{ $headers['pageTitle'] }}</title>
     <link rel="icon" href="/favicon.png">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/vf.css?v=3') }}" rel="stylesheet" />
+    <link href="{{ asset('css/vf.css?v=6') }}" rel="stylesheet" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151418896-1"></script>
@@ -39,7 +39,7 @@
         <div class="row justify-content-center p-0">
             <div class="col-lg-1 sidebar-lg-spacer"></div>
             <div class="offset-lg-1 col-lg-8 col-md-9 col-sm-12"><!-- Central Canvas -->
-{{--@include('ali.ad')--}}
+@include('cont.jumbo_shop')
 @yield('content')
             </div><!-- Central Canvas Ends -->
             <div class="col-lg-2 col-md-3 col-sm-12"><!-- Popular Area Starts -->
@@ -50,7 +50,7 @@
 </main>
 @include('nav.footer')
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/vf.js?v=5') }}"></script>
+<script src="{{ asset('js/vf.js?v=6') }}"></script>
 <script src="{{ asset('js/sl.js') }}"></script>
 </body>
 </html>
