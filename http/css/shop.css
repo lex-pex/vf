@@ -32,15 +32,11 @@
     color: dodgerblue;
 }
 
-.vf-shop-card{
-    transition:.5s;
-    border: solid 1px #dfdfdf;
-    margin:10px 0;
-    text-align: center;
-}
-
 .vf-shop-card {
     transition:.5s;
+    border: solid 1px #dfdfdf;
+    border-radius: 10px;
+    margin:10px 0;
     padding:25px 0;
     text-align: center;
 }
@@ -49,9 +45,9 @@
     padding: 2px 5px;
     margin:5px;
     background:lightyellow;
-    font-size:0.9em;
     color:#555;
 }
+
 .vf-shop-card .price sup {
     font-size: 0.6em;
     color:green;
@@ -63,15 +59,18 @@
 }
 
 .shop-title {
-    padding-top:15px !important;
+    margin-top:25px;
     font-size: 17px;
-    color:dodgerblue;
+    font-weight: bold;
+    color:#555;
 }
 
 .vf-shop-card .price {
-    text-align: right;
-    font-size: 20px;
-    color: #555;
+    padding:10px;
+    text-align:right;
+    font-size:20px;
+    font-weight:bold;
+    color: #777;
 }
 
 .vf-shop-card a {
@@ -88,9 +87,9 @@
     font-weight:900!important;
 }
 
-/*.vf-shop-card:hover{*/
-    /*transform: scale(1.007);*/
-/*}*/
+.vf-shop-card:hover{
+    transform: scale(1.007);
+}
 
 /* Cart */
 
@@ -104,19 +103,26 @@
 }
 
 #cart_count{
-    color:firebrick;
+    color:red;
+    font-weight: bold;
 }
 
 .shop-card-label a{
+    color:silver;
     text-decoration: none;
+}
+.shop-card-label a:hover {
+    color:#555;
 }
 
 .shop-card-label {
-    top:0;
-    left:20px;
-    padding:0 5px;
+    top:-3px;
+    left:25px;
+    padding:5px 7px;
     position:absolute;
-    background:yellow;
+    background:white;
+    border:solid 1px #dfdfdf;
+    border-radius:7px;
 }
 
 .vf-shop-card-footer{
@@ -171,6 +177,97 @@
     border-radius:3px;
     background:#4ae4bb;
 }
+
+
+
+
+/* - - - - - - - - - - - - Side Bar - - - - - - - - - - */
+
+
+.shop-selected {
+    background:black !important;
+    color:#ddd;
+}
+
+a.category-link {
+    text-decoration:none !important;
+}
+
+.category-link {
+    background: #444;
+    color:#ddd;
+    margin-left: 2px;
+    text-align:left;
+    padding:25px!important;
+    border-bottom: solid 2px #555;
+    border-left: solid 3px orange;
+}
+
+.category-link:hover {
+    transition: .5s;
+    background: black;
+}
+
+.category-link h5{
+    font-weight:800!important;
+    color:#ddd;
+    line-height: 0.8em;
+    padding:6px 0;
+    margin:0;
+}
+
+.category-link span {
+    color:white;
+}
+
+.category-link p{
+    color:#ccc;
+    line-height:1em;
+    padding:0;
+    font-size:1.5em;
+}
+
+.category-link a{
+    color:#555;
+    text-decoration: none;
+}
+
+.category-link img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

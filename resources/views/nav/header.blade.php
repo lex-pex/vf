@@ -9,12 +9,21 @@
             </div>
         </div>
         <div class="col-lg-8 col-md-7 col-sm-12 text-center">
-            <div class="welcome">
-                <h1>{{ $headers['title'] }}</h1>
-                <div class="description">
-                    <p>{!! $headers['description'] !!}</p>
+
+            <h1>{{ $headers['title'] }}</h1>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8 col-md-10 col-sm-12">
+                    <div class="welcome">
+
+                        <div class="description_HIDE">
+                            <p>{!! $headers['description'] !!}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
         <div class="col-lg-2 col-md-3 col-sm-12 text-center p-0 pad-h-25">
             <div class="soc soc-btn">

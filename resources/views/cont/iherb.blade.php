@@ -31,12 +31,13 @@
     <div class="col-md-6 col-sm-12">
         <div class="vf-card">
             <span class="card-label"><a href="">Лучшие Товары</a></span>
-            <a href="https://ua.iherb.com/pr/Now-Foods-Melatonin-3-mg-180-Capsules/328?rcode=AYI5215"
+            <a href="https://ua.iherb.com/pr/Now-Foods-Silymarin-Milk-Thistle-Extract-150-mg-120-Veg-Capsules/794/?rcode=AYI5215"
                target="_blank" onclick="ihCount(2)">
-                <img src="/img/iherb/melatonin_2.jpg" alt="Мелатонин" title="Перейти в магазин для покупки мелатонина" />
+                <img src="/img/iherb/Silymarin.jpg" alt="Силимарин" title="Перейти в магазин для покупки Силимарина" />
                 <h5 style="text-align: center">Купить на iHerb</h5>
                 <p>
-                    Мелатонин успокаивает, нормализует давление, является мощным антиоксидантом.
+                    В помощь трудяге-печени!
+                    Силимарин является уникальным средством для защиты и восстановления клеток печени.
                     Чтобы получить скидку переходите по данной ссылке, или используйте промокод
                     <span class="cyphers">AYI5215</span> при заказе
                 </p>

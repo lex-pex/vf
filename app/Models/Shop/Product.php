@@ -9,7 +9,12 @@ use Illuminate\Support\Facades\DB;
 
 class Product extends Model
 {
-//    public function getPriceAttribute($value){return ceil($value / 2 * 1.3);}
+
+    public function getPriceAttribute($value){
+//        return ceil($value / 2 * 1.3);
+        return ceil($value / 2);
+    }
+
     public function getPrice() {
         return DB::table('sh_products')->select('price')->where('id', $this->id)->first()->price;
     }

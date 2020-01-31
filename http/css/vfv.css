@@ -294,12 +294,17 @@ h1, h2, h3, h4, h5, h6 {
 
 #sidebar{
     z-index:99;
-    width: 100%;
+    width:100%;
     padding-left:15px;
 }
 
 .ali-goods-area a {
     text-decoration: none;
+}
+
+#sb_btn {
+    padding-right: 10px;
+    border-right: 2px solid white;
 }
 
 @media (min-width:993px) { /* Big Screen */
@@ -337,11 +342,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     .sidebar-container{
         padding:0 !important;
+        min-width:70% !important;
     }
     .vf-rubric-label{
         width:75% !important;
+        height: 50px;
         border-radius: 0 0 15px 0 !important;
-        padding:2px 20px !important;
+        padding:13px 20px !important;
         text-align:left!important;
     }
     .padding-top-medium-percent{
@@ -354,12 +361,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 575px) { /* Small Screen */
     .sidebar-container{
-        width:65% !important;
+        width:93% !important;
     }
     .vf-rubric-label{
-        width:65% !important;
+        width:75% !important;
         border-radius: 0 0 20px 0 !important;
-        padding:2px 10px !important;
+        padding:13px 10px !important;
         text-align:left!important;
     }
     .vf-jumbo-txt .vf-btn {
@@ -405,11 +412,17 @@ h1, h2, h3, h4, h5, h6 {
     .vf-pager{
         width:50%!important;
     }
+    .soc {
+        display: none;
+    }
 }
 
 @media (max-width: 375px) {
     .vf-pager{
         width:70%!important;
+    }
+    .soc {
+        display: none;
     }
 }
 

@@ -2,7 +2,7 @@
     <div class="sb-btn">
         <div class="vf-rubric-label">
             <span onclick="event.preventDefault();sbSwap()">
-                <i id="sb_btn" class="fa fa-bars"> |</i></span>&nbsp; РУБРИКИ
+                <i id="sb_btn" class="fa fa-bars"> </i></span>&nbsp; РУБРИКИ
         </div>
     </div>
     <nav id="sidebar">
