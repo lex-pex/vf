@@ -27,10 +27,6 @@ function toggle(sb) {
     }
 }
 
-$('.vf-calendar').carousel({
-    interval: 0
-});
-
 /**
  * Comment edit
  * @param id - comment under editing
@@ -106,7 +102,6 @@ function amount(id){
 }
 
 /* iHerb counter */
-
 function ihCount(number) {
     var token = $('meta[name="csrf-token"]').attr('content');
     $.post(
@@ -116,7 +111,7 @@ function ihCount(number) {
             $('#iherb_counter_' + number).html(data);
         });
 }
-
+/* iHerb counter reset */
 function ihCountReset(number) {
     var token = $('meta[name="csrf-token"]').attr('content');
     $.post(
@@ -127,6 +122,9 @@ function ihCountReset(number) {
         });
 }
 
+/**
+ * Message modal once per session
+ */
 $(document).ready(function () {
     $('#modal_launcher').click();
 });
@@ -135,5 +133,9 @@ function modalMessageRead() {
     var token = $('meta[name="csrf-token"]').attr('content');
     $.post('/shop/cart/message_read', {_token : token });
 }
+
+
+
+
 
 

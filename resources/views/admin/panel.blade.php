@@ -1,4 +1,4 @@
-@extends('index')
+@extends('layouts.app')
 @section('content')
 <div class="row justify-content-center pad-top-50">
     <div class="col-lg-8 col-md-10 col-sm-12">
@@ -61,6 +61,8 @@
         </div>
 
 
+        <!-- Calendar -->
+
         <div class="row pad-bot-100">
             <div class="col-12 p-1">
                 <div id="markers" class="carousel slide vf-calendar" data-ride="carousel">
@@ -96,6 +98,19 @@
                 </div>
             </div>
         </div>
+
+
+        <script>
+
+            alert('hello: ' + jQuery.fn.jquery);
+
+            $('.vf-calendar').carousel({
+                interval: 0
+            });
+        </script>
+
+        <!-- Calendar Ends -->
+
     </div>
 </div>
 @endsection
