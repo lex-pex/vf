@@ -728,7 +728,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: solid 1px silver;
 }
 
-/* Paginator */
+/* Paginate */
 
 .vf-pager{
     margin:0 !important;
@@ -744,11 +744,13 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.9em;
     word-spacing:0.2em;
     letter-spacing:0.03em;
+    /*
     -moz-user-select:none;
     -webkit-user-select:none;
     -ms-user-select:none;
     -o-user-select:none;
     user-select:none;
+    */
 }
 .vf-txt h3, h5 {
     padding:0;
