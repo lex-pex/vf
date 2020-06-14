@@ -55,8 +55,7 @@ class PostManager extends Controller
         return redirect('preview/' . $blogPost->id);
     }
 
-    public function preview($post_id) {
-        $blogPost = BlogPost::getPost($post_id);
+    public function preview($blogPost) {
         $category_id = $blogPost->category_id;
         return view('post.preview', [
             'headers' => $this->getPostHeaders($blogPost),
@@ -72,11 +71,7 @@ class PostManager extends Controller
     }
 
     public function confirmDelete(BlogPost $blogPost) {
-
-//        dd('Confirm Page');
-
         $category_id = $blogPost->category_id;
-
         return view('post.del', [
             'headers' => $this->getDelHeaders(),
             'currentCategory' => $category_id,
@@ -85,17 +80,17 @@ class PostManager extends Controller
     }
 
     public function postUpdate(BlogPost $blogPost, Request $request) {
-        $post_id = $blogPost->id;
         $this->validate($request, [
             'title' => 'required|max:200',
             'text' => 'required|max:40000',
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
         BlogPost::postUpdate($blogPost, $request);
-        return redirect('preview/' . $blogPost->id);
+        return redirect(route('preview', $blogPost));
+        // return redirect('preview/' . $blogPost->id);
     }
 
-    /* Pages Headers */
+    /* Headers for Pages */
 
     private function getPostHeaders(BlogPost $blogPost)
     {
